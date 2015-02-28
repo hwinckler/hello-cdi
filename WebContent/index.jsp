@@ -8,5 +8,9 @@
 </head>
 <body>
 	<a href="hello">Hello World</a>
+	<br />
+	<a href="calcular-folha">Folha de Pagamento - Simulador</a>
+	<br />
+	<a href="calcular-salario">Calcula Salario</a>
 </body>
 </html>
