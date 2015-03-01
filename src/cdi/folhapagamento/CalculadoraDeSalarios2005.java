@@ -8,7 +8,7 @@ import javax.enterprise.inject.Alternative;
 import javax.inject.Inject;
 import javax.interceptor.Interceptor;
 
-@Alternative @Priority(Interceptor.Priority.APPLICATION + 2)
+@Alternative @Priority(Interceptor.Priority.APPLICATION)
 public class CalculadoraDeSalarios2005 implements CalculadoraDeSalarios {
 
 	@Inject
