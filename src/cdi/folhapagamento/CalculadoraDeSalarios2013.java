@@ -1,8 +1,10 @@
 package cdi.folhapagamento;
 
+import javax.annotation.Priority;
 import javax.enterprise.inject.Alternative;
+import javax.interceptor.Interceptor;
 
-@Alternative
+@Alternative @Priority(Interceptor.Priority.APPLICATION + 1)
 public class CalculadoraDeSalarios2013 implements CalculadoraDeSalarios {
 
 	@Override

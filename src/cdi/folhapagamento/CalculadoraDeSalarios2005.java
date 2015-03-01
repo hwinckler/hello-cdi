@@ -3,8 +3,12 @@ package cdi.folhapagamento;
 import java.util.Calendar;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Priority;
+import javax.enterprise.inject.Alternative;
 import javax.inject.Inject;
+import javax.interceptor.Interceptor;
 
+@Alternative @Priority(Interceptor.Priority.APPLICATION + 2)
 public class CalculadoraDeSalarios2005 implements CalculadoraDeSalarios {
 
 	@Inject

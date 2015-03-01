@@ -31,6 +31,8 @@ public class CalcularSalarioController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		calculadoraDeSalarios.calculaSalario(new FuncionarioBuilder().build());
+		
+		response.getOutputStream().print("Calculadora: " + calculadoraDeSalarios.getClass());
 	}
 
 	/**
